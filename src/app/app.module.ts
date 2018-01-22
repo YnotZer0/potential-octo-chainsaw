@@ -11,6 +11,7 @@ import { OthersPage } from '../pages/others/others';
 import { PlacesPage } from '../pages/places/places';
 import { SharePage } from '../pages/share/share';
 import { LoginPage } from '../pages/login/login';
+import { TabsPage } from '../pages/tabs/tabs';
 import { CompanyDetailsPage } from '../pages/company-details/company-details';
 import { ConnectivityService } from '../providers/connectivity-service/connectivity-service';
 
@@ -22,6 +23,7 @@ import { ConnectivityService } from '../providers/connectivity-service/connectiv
     PlacesPage,
     SharePage,
     LoginPage,
+    TabsPage,
     CompanyDetailsPage
   ],
   imports: [
@@ -36,6 +38,7 @@ import { ConnectivityService } from '../providers/connectivity-service/connectiv
     PlacesPage,
     SharePage,
     LoginPage,
+    TabsPage,
     CompanyDetailsPage
   ],
   providers: [
