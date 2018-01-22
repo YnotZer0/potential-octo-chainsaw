@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Places Near You</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <br/>
+  <ion-item>
+    <ion-icon color="primary" name="analytics" item-start></ion-icon>
+      Company X
+    <ion-badge item-end>1,250</ion-badge>
+  </ion-item>
+  <br/>
+  <div align="center">
+    <button ion-button large (click)="showTheMap()">
+      Show Map
+    </button>
+  </div>
+  <div #map id="map"></div>  
+</ion-content>

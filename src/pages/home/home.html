@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-navbar hideBackButton="true" color="primary">
+    <ion-title>
+      Last July
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-item>
+      <ion-label fixed>Category</ion-label>
+      <ion-select (ionChange)="changeCategory()" [(ngModel)]="category" name="category">
+          <ion-option value="all">All Categories</ion-option>
+          <ion-option value="sports">Sports</ion-option>
+          <ion-option value="food">Food</ion-option>
+          <ion-option value="news">News</ion-option>
+          <ion-option value="music">Music</ion-option>
+          <ion-option value="funny">Funny</ion-option>
+          <ion-option value="gaming">Gaming</ion-option>
+          <ion-option value="art">Art</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <br/>
+    <div align="center">
+      <button ion-button large (click)="goToSharePage()">
+        Share My View
+      </button>
+      <button ion-button large (click)="goToOthersPage()">
+        Others View
+      </button>
+      <button ion-button large (click)="goToPlacesNearMePage()">
+        Places Near Me
+      </button>
+    </div>
+  <br/>
+
+</ion-content>
