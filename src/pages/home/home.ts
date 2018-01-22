@@ -14,6 +14,8 @@ export class HomePage {
   category: any;
   limit:any;
 
+//This page will not be shown as Login->Tabs->(Others)
+
   constructor(public navCtrl: NavController){
     this.getDefaults();
   }

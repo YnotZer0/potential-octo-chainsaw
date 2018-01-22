@@ -9,8 +9,8 @@ import { SharePage } from '../share/share';
 export class TabsPage {
   // this tells the tabs component which Pages
   // should be each tab's root Page
-  tab1Root: any = SharePage;
-  tab2Root: any = OthersPage;
+  tab1Root: any = OthersPage;
+  tab2Root: any = SharePage;
   tab3Root: any = PlacesPage;
 
   constructor() {
