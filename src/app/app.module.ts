@@ -20,6 +20,7 @@ import { SettingsPage } from '../pages/settings/settings';
 import { WelcomePage } from '../pages/welcome/welcome';
 import { SignupPage } from '../pages/signup/signup';
 import { ConnectivityService } from '../providers/connectivity-service/connectivity-service';
+import { RatingComponent } from '../rating/rating.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { ConnectivityService } from '../providers/connectivity-service/connectiv
     MyAccountPage,
     SettingsPage,
     WelcomePage,
-    SignupPage
+    SignupPage,
+    RatingComponent
   ],
   imports: [
     BrowserModule,

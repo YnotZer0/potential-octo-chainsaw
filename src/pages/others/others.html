@@ -16,6 +16,7 @@
       <div class="item-note" item-right>
         {{item.note}}
       </div>
+      <app-rating [rating]='item.rating' [itemId]='item.id' (ratingClick)='ratingComponentClick($event)'></app-rating>
     </button>
   </ion-list>
 </ion-content>
