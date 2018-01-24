@@ -1,0 +1,28 @@
+page-welcome {
+
+  sup {
+      vertical-align: super;
+      font-size: smaller;
+  }
+  
+  div.logoImage {
+//    position: relative;
+//    top: 10px;
+    height: 350px;
+    width: 100%;
+//    border: 1px solid #73AD21;
+  }
+
+  div.loginDetails {
+    position:relative;
+//    top: 50%;
+//    border: 1px solid #73AD21;
+  }
+
+  div.signUp {
+    position:relative;
+    padding-top: 20px;
+//    top: 50%;
+  }
+
+}

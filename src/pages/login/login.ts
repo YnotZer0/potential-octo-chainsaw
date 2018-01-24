@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-//import { HomePage } from '../home/home';
 import { TabsPage } from '../tabs/tabs';
 
 @Component({
@@ -18,12 +17,10 @@ export class LoginPage {
     console.log('ionViewDidLoad LoginPage');
   }
 
-  goToHomePage() {
-    console.log('goToHomePage pressed');
-//    this.navCtrl.push(HomePage);
+  goToTabsPage() {
+    console.log('goToTabsPage pressed');
     this.navCtrl.setRoot(TabsPage); //This flips it straight to TabsPage
     //and then shows the first tab to the user
-
   }
 
 

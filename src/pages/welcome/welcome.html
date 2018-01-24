@@ -1,0 +1,29 @@
+<ion-header></ion-header>
+
+<ion-content scroll="false">
+  <div class="logoImage">
+    <ion-img height="100%" width="100%" src="assets/imgs/main_logo.png"></ion-img>
+  </div>
+  <div align="center"><h2>Tell Me About It<sup><i class="fa fa-trademark" aria-hidden="true"></i></sup></h2></div>
+  <div class="loginDetails" align="center">
+    <ion-grid>
+      <ion-row>
+        <ion-col align-self-end>
+          <i class="fa fa-facebook" style="font-size:60px;color:blue" (click)="loginWithFaceBook()"></i>
+        </ion-col>
+        <ion-col>
+          <i class="fa fa-google" style="font-size:60px;color:red" (click)="loginWithGooglePlus()"></i>
+        </ion-col>
+        <ion-col>
+          <i class="fa fa-twitter" style="font-size:60px;color:lightblue" (click)="loginWithTwitter()"></i>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <button ion-button block icon-only round large (click)="loginWithEmail()">
+      <ion-icon name="person"></ion-icon>
+    </button>
+  </div>
+  <div class="signUp" align="center">
+  <span style="vertical-align:middle">Not a Member?</span><button ion-button icon-right round (click)="signUpNewUser()">Sign Up<ion-icon name="person-add"></ion-icon></button>
+  </div>
+</ion-content>

@@ -13,6 +13,12 @@ import { SharePage } from '../pages/share/share';
 import { LoginPage } from '../pages/login/login';
 import { TabsPage } from '../pages/tabs/tabs';
 import { CompanyDetailsPage } from '../pages/company-details/company-details';
+import { AboutPage } from '../pages/about/about';
+import { HelpPage } from '../pages/help/help';
+import { MyAccountPage } from '../pages/my-account/my-account';
+import { SettingsPage } from '../pages/settings/settings';
+import { WelcomePage } from '../pages/welcome/welcome';
+import { SignupPage } from '../pages/signup/signup';
 import { ConnectivityService } from '../providers/connectivity-service/connectivity-service';
 
 @NgModule({
@@ -24,7 +30,13 @@ import { ConnectivityService } from '../providers/connectivity-service/connectiv
     SharePage,
     LoginPage,
     TabsPage,
-    CompanyDetailsPage
+    CompanyDetailsPage,
+    AboutPage,
+    HelpPage,
+    MyAccountPage,
+    SettingsPage,
+    WelcomePage,
+    SignupPage
   ],
   imports: [
     BrowserModule,
@@ -39,7 +51,13 @@ import { ConnectivityService } from '../providers/connectivity-service/connectiv
     SharePage,
     LoginPage,
     TabsPage,
-    CompanyDetailsPage
+    CompanyDetailsPage,
+    AboutPage,
+    HelpPage,
+    MyAccountPage,
+    SettingsPage,
+    WelcomePage,
+    SignupPage
   ],
   providers: [
     StatusBar,

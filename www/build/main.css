@@ -25690,3 +25690,39 @@ page-login #img {
 page-places #map {
   height: 50%;
 }
+
+page-places ion-card.adv-map p {
+  font-size: 0.7em !important;
+}
+
+page-places button[fab].fab-map {
+  top: calc(100% - 35px);
+  z-index: 50;
+}
+
+page-places .item-bold {
+  font-weight: bold;
+}
+
+page-places ion-content.cards-bg {
+  background-color: #f4f4f7;
+}
+
+page-welcome sup {
+  vertical-align: super;
+  font-size: smaller;
+}
+
+page-welcome div.logoImage {
+  height: 350px;
+  width: 100%;
+}
+
+page-welcome div.loginDetails {
+  position: relative;
+}
+
+page-welcome div.signUp {
+  position: relative;
+  padding-top: 20px;
+}
