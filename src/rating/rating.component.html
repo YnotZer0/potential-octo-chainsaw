@@ -1,4 +1,5 @@
-<fieldset class="rating">
+<!--<fieldset class="rating"> //puts a box around the rating stars-->
+<div class="rating">
     <input type="radio" [name]="inputsName" value="5" [checked]="rating===5" />
     <label title="Rocks!" (click)='onClick(5)'>5 stars</label>
 
@@ -13,4 +14,5 @@
 
     <input type="radio" [name]="inputsName" value="1" [checked]="rating===1" />
     <label title="Sucks big time" (click)='onClick(1)'>1 star</label>
-</fieldset>
+<!--</fieldset>-->
+</div>

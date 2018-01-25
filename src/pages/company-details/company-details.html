@@ -10,9 +10,21 @@
 <ion-content>
   <h3 text-center *ngIf="selectedItem">
     {{selectedItem.title}}
-    <ion-icon [name]="selectedItem.icon"></ion-icon>
+    <i class="selectedItem.icon" aria-hidden="true" item-left></i>
   </h3>
   <h4 text-center *ngIf="selectedItem">
-    You navigated here from <b>{{selectedItem.title}}</b>
+    You want to know more about <b>{{selectedItem.title}}</b>
   </h4>
+
+  <ion-list>
+    <ion-item ion-item *ngFor="let review of reviews">
+      <i class="{{review.icon}}" aria-hidden="true" item-left></i>
+      <h2>{{review.name}}</h2>
+      <app-rating [rating]='review.rating' [itemId]='review.id'></app-rating>
+      <br/>
+      <p>{{review.review}}</p>
+<!--            <app-rating [rating]='item.rating' [itemId]='item.id' (ratingClick)='ratingComponentClick($event)'></app-rating> -->
+    </ion-item>
+  </ion-list>
+
 </ion-content>

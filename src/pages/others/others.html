@@ -8,15 +8,19 @@
 </ion-header>
 
 <ion-content>
+
+  <ion-card>
+    <ion-card-header>Most recent reviews</ion-card-header>
+  </ion-card>
+
   <ion-list>
     <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
-      <ion-icon name="{{item.icon}}" item-left></ion-icon>
-      {{item.title}}
-      {{item.rating}}
-      <div class="item-note" item-right>
-        {{item.note}}
-      </div>
-      <app-rating [rating]='item.rating' [itemId]='item.id' (ratingClick)='ratingComponentClick($event)'></app-rating>
+      <i class="{{item.icon}}" aria-hidden="true" item-left></i>
+      <h2>{{item.title}}</h2>
+      <app-rating [rating]='item.rating' [itemId]='item.id'></app-rating>
+      <div item-right><small>{{item.note}}</small></div>
+<!--            <app-rating [rating]='item.rating' [itemId]='item.id' (ratingClick)='ratingComponentClick($event)'></app-rating> -->
     </button>
   </ion-list>
+
 </ion-content>

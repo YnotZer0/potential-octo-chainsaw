@@ -1,4 +1,5 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core'
+//credit to: http://js231sharepoint.com/angular2-stars-rating-component-with-typescript/
 
 @Component({
     selector: 'app-rating',

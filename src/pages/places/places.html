@@ -24,6 +24,18 @@
 -->
   <div #map id="map"></div>
 
+  <ion-list>
+    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
+      <i class="{{item.icon}}" aria-hidden="true" item-left></i>
+      <h2>{{item.title}}</h2>
+      <app-rating [rating]='item.rating' [itemId]='item.id'></app-rating>
+      <p>&nbsp;&nbsp;11 N. Way St, Madison, WI 53703</p>
+      <div item-right><small>{{item.note}}</small></div>
+<!--            <app-rating [rating]='item.rating' [itemId]='item.id' (ratingClick)='ratingComponentClick($event)'></app-rating> -->
+    </button>
+  </ion-list>
+  
+<br/><br/><hr/>
   <ion-card class="adv-map">
     <div style="position: relative">
       <img src="assets/imgs/advance-card-map-madison.png">
