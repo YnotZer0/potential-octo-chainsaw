@@ -22,6 +22,8 @@ export class PlacesPage {
   mapInitialised: boolean = false;
   apiKey: any;
   loader: any;
+  companies: string[];
+  
 
   icons: string[];
   items: Array<{id: number, title: string, note: string, rating: number, icon: string}>;

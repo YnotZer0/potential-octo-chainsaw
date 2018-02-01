@@ -25708,6 +25708,16 @@ page-places ion-content.cards-bg {
   background-color: #f4f4f7;
 }
 
+page-settings .photoImg {
+  height: 150px;
+  width: 100%;
+}
+
+page-share .photoImg {
+  height: 150px;
+  width: 100%;
+}
+
 page-welcome sup {
   vertical-align: super;
   font-size: smaller;

@@ -10,7 +10,8 @@ import { CompanyDetailsPage } from '../company-details/company-details';
 export class OthersPage {
   ratingClicked: number;
   itemIdRatingClicked: number;
-
+  companies: string[];
+  
   icons: string[];
   items: Array<{id: number, title: string, note: string, rating: number, icon: string}>;
 

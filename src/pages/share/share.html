@@ -8,5 +8,19 @@
 </ion-header>
 
 <ion-content>
-
+<!-- drop down for category -->
+<!-- input box for company name OR brand? -->
+<!-- rating value -->
+  <button ion-button block round large (click)="getReview()">
+    Tell me your review
+  </button>
+  <button ion-button block round large (click)="callSTT()">
+    Call STT
+  </button>
+  <div id="output">---</div>
+  <textarea id="outputText" rows="10" cols="45">{{customerReview}}</textarea>
+<!-- input box for TAGS as defined by the user -->
+  <button ion-button block round large color="secondary" (click)="submitReview()">
+    Share your View
+  </button>
 </ion-content>

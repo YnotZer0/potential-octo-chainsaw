@@ -9,7 +9,9 @@ export class CompanyDetailsPage {
   selectedItem: any;
   ratingClicked: number;
   itemIdRatingClicked: number;
-
+  reviewers: string[];
+  review: string[];
+  
   icons: string[];
   reviews: Array<{id: number, name: string, review: string, rating: number, icon: string}>;
 
