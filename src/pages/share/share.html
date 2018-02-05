@@ -11,9 +11,13 @@
 <!-- drop down for category -->
 <!-- input box for company name OR brand? -->
 <!-- rating value -->
+  <button ion-button primary (click)="stopRecord()" *ngIf="recording"><ion-icon name="mic-off"></ion-icon>&nbsp;&nbsp;Stop Record Review</button>
+  <button ion-button primary (click)="startRecord()" *ngIf="!recording"><ion-icon name="mic"></ion-icon>&nbsp;&nbsp;Start Recording Review</button>
+<!--
   <button ion-button block round large (click)="getReview()">
     Tell me your review
   </button>
+-->
   <button ion-button block round large (click)="callSTT()">
     Call STT
   </button>

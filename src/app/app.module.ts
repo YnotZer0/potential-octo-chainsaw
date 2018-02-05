@@ -21,7 +21,8 @@ import { WelcomePage } from '../pages/welcome/welcome';
 import { SignupPage } from '../pages/signup/signup';
 import { ConnectivityService } from '../providers/connectivity-service/connectivity-service';
 import { RatingComponent } from '../rating/rating.component';
-import { MediaCapture } from '@ionic-native/media-capture';
+//import { MediaCapture } from '@ionic-native/media-capture';
+import { Media } from '@ionic-native/media';
 import { FileTransfer, FileTransferObject } from '@ionic-native/file-transfer';
 import { File } from '@ionic-native/file';
 //import { HttpModule } from '@angular/http';
@@ -77,8 +78,9 @@ import { HttpClientModule } from '@angular/common/http';
     ConnectivityService,
     FileTransfer,
     FileTransferObject,
-    File,
-    MediaCapture
+    Media,
+    File
+//    MediaCapture
   ]
 })
 export class AppModule {}
